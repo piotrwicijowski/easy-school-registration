@@ -4,7 +4,7 @@
  * Plugin URI:      https://easyschoolregistration.com/
  * Description:     Tools to help you run your school better
  *
- * Version:         3.9.8
+ * Version:         3.9.8.2pre
  * Tested up to:    6.4.2
  *
  * Author:          Zbynek Nedoma

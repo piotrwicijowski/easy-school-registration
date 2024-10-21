@@ -200,7 +200,7 @@ class ESR_Registration_Table_Column_Content {
         $show_payment_enabled   = intval( ESR()->settings->esr_get_option( 'show_payment_enabled', - 1 ) ) !== - 1;
 
         if ( $show_payment_enabled ) { ?>
-			<td class="payment-status"><?php echo esc_html(ESR()->payment_status->get_title( $registration->payment_status )); ?></td>
+			<td class="payment-status" data-payment-status="<?php echo esc_attr($registration->payment_status); ?>"><?php echo esc_html(ESR()->payment_status->get_title( $registration->payment_status )); ?></td>
         <?php }
     }
 

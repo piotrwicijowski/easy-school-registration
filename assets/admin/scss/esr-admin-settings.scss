@@ -349,7 +349,22 @@ table.dataTable thead #esr_reg_actions.sorting_asc:after {
             top: 0;
         }
     }
+
+    &.status-2:has(td.payment-status[data-payment-status]:not([data-payment-status="1"]))::after
+    {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: red;
+        display: block;
+        left: 0;
+        opacity: 0.5;
+        pointer-events: none;
+        mix-blend-mode: color;
+    }
 }
+
 
 .registration-row .dancing-with,
 .registration-row .dancing-as,

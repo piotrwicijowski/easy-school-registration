@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name:     Easy School Registration
+ * Plugin Name:     Easy School Registration (with payments mod by Wici)
  * Plugin URI:      https://easyschoolregistration.com/
  * Description:     Tools to help you run your school better
  *
- * Version:         3.9.8
+ * Version:         3.9.9-alpha
  * Tested up to:    6.4.2
  *
  * Author:          Zbynek Nedoma

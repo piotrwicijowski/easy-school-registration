@@ -5,11 +5,8 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
     tags:
       - '*'
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -24,6 +21,6 @@ jobs:
     - run: bun run zip
     - name: Release
       uses: softprops/action-gh-release@v2
-      # if: startsWith(github.ref, 'refs/tags/')
+      draft: true
       with:
         files: easy-school-registration.zip

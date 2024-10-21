@@ -21,6 +21,6 @@ jobs:
     - run: bun run zip
     - name: Release
       uses: softprops/action-gh-release@v2
-      draft: true
       with:
+        draft: true
         files: easy-school-registration.zip

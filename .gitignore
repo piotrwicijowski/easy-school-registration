@@ -9,3 +9,4 @@ tests/tmp/
 /temp/
 inc/assets/admin/css/*.js
 inc/assets/web/css/*.js
+composer.phar

@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: oven-sh/setup-bun@v2
-    - run: bun ci
+    - run: bun install --frozen-lockfile
     - run: bun run build --if-present
     - run: bun run zip
     - name: Create Release

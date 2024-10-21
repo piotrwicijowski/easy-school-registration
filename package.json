@@ -7,8 +7,13 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack"
+    "dev": "webpack",
+    "zip": "wp-scripts plugin-zip"
   },
+  "files": [
+    "libs",
+    "inc"
+  ],
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.5.1",
@@ -22,6 +27,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "@wordpress/scripts": "^30.3.0",
     "webpack-remove-empty-scripts": "^1.0.4"
   }
 }

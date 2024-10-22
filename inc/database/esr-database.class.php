@@ -29,7 +29,7 @@ class ESR_Database {
 
 	private static function database_update() {
         include_once 'updates/esr-update.3.9.3.php';
-        /* include_once 'updates/esr-update.3.9.9.php'; */
+        include_once 'updates/esr-update.3.9.9.php';
 
         if (get_site_option('esr_has_db_version', 'not_set') === 'not_set') {
             update_option('esr_has_db_version', true);

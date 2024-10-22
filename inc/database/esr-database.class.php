@@ -29,6 +29,7 @@ class ESR_Database {
 
 	private static function database_update() {
         include_once 'updates/esr-update.3.9.3.php';
+        /* include_once 'updates/esr-update.3.9.9.php'; */
 
         if (get_site_option('esr_has_db_version', 'not_set') === 'not_set') {
             update_option('esr_has_db_version', true);
@@ -164,6 +165,19 @@ class ESR_Database {
 			PRIMARY KEY id (id)
 		) $charset_collate;";
 
+		$sql .= "CREATE TABLE {$wpdb->prefix}esr_bank_transactions (
+			id bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+			user_payment_id bigint(20) UNSIGNED NULL,
+			wave_id bigint(20) UNSIGNED NOT NULL,
+			title varchar(1000) NOT NULL,
+			transaction_datetime varchar(50) NOT NULL,
+			amount float DEFAULT NULL,
+			balance float DEFAULT NULL,
+			note text DEFAULT NULL,
+			status int DEFAULT 0,
+			PRIMARY KEY id (id)
+		) $charset_collate;";
+
 		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 		dbDelta($sql);
 	}
@@ -178,6 +192,7 @@ class ESR_Database {
 		$wpdb->query("DROP TABLE `{$wpdb->prefix}esr_course_data`;");
 		$wpdb->query("DROP TABLE `{$wpdb->prefix}esr_teacher_data`;");
 		$wpdb->query("DROP TABLE `{$wpdb->prefix}esr_wave_data`;");
+		$wpdb->query("DROP TABLE `{$wpdb->prefix}esr_bank_transactions`;");
 	}
 
 }

@@ -276,7 +276,7 @@ if ( ! class_exists( 'Easy_School_Registration' ) ) {
 
 		private function setup_constants() {
 			define( 'ESR_SLUG', 'esr' );
-			define( 'ESR_VERSION', '3.9.8' );
+			define( 'ESR_VERSION', '3.9.9' );
 			// Plugin Root File.
 			if ( ! defined( 'ESR_PLUGIN_FILE' ) ) {
 				define( 'ESR_PLUGIN_FILE', __FILE__ );

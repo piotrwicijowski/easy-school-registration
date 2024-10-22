@@ -3,7 +3,7 @@ Contributors: domaneni
 Donate link: https://ko-fi.com/domaneni
 Tags: school, registration, dance, easy registration
 Tested up to: 6.4.2
-Stable Tag: 3.9.8
+Stable Tag: 3.9.9
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -62,6 +62,11 @@ From your WordPress dashboard
 6. Styling setting page
 
 == Changelog ==
+
+= 3.9.9 Unreleased =
+
+* New - Allow for styling admin registration table entries based on payment status
+* New - Add bank transactions table
 
 = 3.9.8 2024-01-23 =
 

@@ -9,6 +9,11 @@
 
 ---
 
+3.9.9 Unreleased
+
+- New: Allow for styling admin registration table entries based on payment status
+- New: Add bank transactions table
+
 3.9.8 - 2024-01-23
 
 - New: Option to rename solo course title

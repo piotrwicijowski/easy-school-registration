@@ -22,7 +22,7 @@ class ESR_Bank_Transactions_Table_Subblock_Templater {
 			</thead>
 			<tbody class="list">
 			<?php
-			$bank_transaction_data               = ESR()->bank_transaction->get_bank_transactions_by_wave( $selected_wave);
+			$bank_transaction_data = ESR()->bank_transaction->get_bank_transactions_by_wave( $selected_wave);
 			foreach ( $bank_transaction_data as $k => $bank_transaction ) {
 				$classes = [ "esr-row", "bank-transfer-row", "transaction-status-" . $bank_transaction->status ];
 

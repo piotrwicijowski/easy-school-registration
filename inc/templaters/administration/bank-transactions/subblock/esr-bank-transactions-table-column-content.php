@@ -58,6 +58,6 @@ class ESR_Bank_Transactions_Table_Column_Content {
 add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_action_content_callback'], 20, 2);
 add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_note_content_callback'], 30, 2);
 add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_status_content_callback'], 50, 2);
-add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_title_header_callback'], 100, 2);
-add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_datetime_header_callback'], 30, 2);
-add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_amount_header_callback'], 30, 2);
+add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_title_content_callback'], 100, 2);
+add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_datetime_content_callback'], 30, 2);
+add_action('esr_template_bank_transactions_table_content', ['ESR_Bank_Transactions_Table_Column_Content', 'esr_print_amount_content_callback'], 30, 2);

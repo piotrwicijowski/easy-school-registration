@@ -2,43 +2,45 @@
 # This file is distributed under the GPL 3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy School Registration 3.9.9\n"
+"Project-Id-Version: Easy School Registration (with payments mod by Wici) 3.9.9-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-school-registration\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-25T05:44:43+00:00\n"
+"POT-Creation-Date: 2024-10-23T02:02:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.0\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: easy-school-registration\n"
 
 #. Plugin Name of the plugin
-#: inc/support/esr-user-role-editor.php:14
-#: inc/templaters/administration/school/esr-school.templater.php:16
-#: inc/templaters/user/esr-user.template.php:15
-msgid "Easy School Registration"
+#: easy-school-registration.php
+msgid "Easy School Registration (with payments mod by Wici)"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: easy-school-registration.php
 msgid "https://easyschoolregistration.com/"
 msgstr ""
 
 #. Description of the plugin
+#: easy-school-registration.php
 msgid "Tools to help you run your school better"
 msgstr ""
 
 #. Author of the plugin
+#: easy-school-registration.php
 msgid "Zbynek Nedoma"
 msgstr ""
 
 #. Author URI of the plugin
+#: easy-school-registration.php
 msgid "https://domaneni.cz"
 msgstr ""
 
-#: easy-school-registration.php:260
-#: easy-school-registration.php:273
+#: easy-school-registration.php:272
+#: easy-school-registration.php:285
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
@@ -79,7 +81,7 @@ msgid "Add over limit"
 msgstr ""
 
 #: inc/class/esr-admin.class.php:23
-#: inc/class/esr-admin.class.php:34
+#: inc/class/esr-admin.class.php:35
 #: inc/class/esr-settings.class.php:819
 #: inc/class/esr-settings.class.php:850
 #: inc/class/esr-settings.class.php:854
@@ -95,21 +97,26 @@ msgstr ""
 msgid "Payment emails"
 msgstr ""
 
-#: inc/class/esr-admin.class.php:26
-msgid "Settings"
+#: inc/class/esr-admin.class.php:25
+#: inc/templaters/administration/bank-transactions/esr-bank-transactions.template.php:29
+msgid "Bank transactions"
 msgstr ""
 
 #: inc/class/esr-admin.class.php:27
+msgid "Settings"
+msgstr ""
+
+#: inc/class/esr-admin.class.php:28
 #: inc/templaters/schedule/esr-schedule.helper.php:73
 msgid "Students"
 msgstr ""
 
-#: inc/class/esr-admin.class.php:33
+#: inc/class/esr-admin.class.php:34
 #: inc/templaters/userinfo/courses/esr.templater.php:24
 msgid "Student info"
 msgstr ""
 
-#: inc/class/esr-admin.class.php:41
+#: inc/class/esr-admin.class.php:42
 #: inc/templaters/teacherinfo/esr-teacher-info.template.php:24
 msgid "Teacher info"
 msgstr ""
@@ -1411,6 +1418,7 @@ msgid "Customize the title of the Note section in the Registration Form. If left
 msgstr ""
 
 #: inc/class/esr-settings.class.php:670
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php:22
 #: inc/templaters/administration/payment-emails/esr-payment-emails.template.php:86
 #: inc/templaters/administration/payments/subblock/esr-payment-form.php:120
 #: inc/templaters/administration/payments/subblock/esr-payment-table-header.php:25
@@ -1969,6 +1977,36 @@ msgstr ""
 msgid "Course price after considering all applicable discounts."
 msgstr ""
 
+#: inc/enums/esr-bank-transaction-status.enum.php:21
+msgid "New"
+msgstr ""
+
+#: inc/enums/esr-bank-transaction-status.enum.php:24
+msgid "Matched auto"
+msgstr ""
+
+#: inc/enums/esr-bank-transaction-status.enum.php:27
+msgid "Matched manual"
+msgstr ""
+
+#: inc/enums/esr-bank-transaction-status.enum.php:30
+msgid "Could not match"
+msgstr ""
+
+#: inc/enums/esr-bank-transaction-status.enum.php:33
+#: inc/enums/esr-registration-status.enum.php:24
+#: inc/templaters/administration/registration/esr-registration-statistics.template.php:22
+msgid "Confirmed"
+msgstr ""
+
+#: inc/enums/esr-bank-transaction-status.enum.php:36
+msgid "Rejected auto"
+msgstr ""
+
+#: inc/enums/esr-bank-transaction-status.enum.php:39
+msgid "Rejected manual"
+msgstr ""
+
 #: inc/enums/esr-course-group.enum.php:35
 msgid "Choose an option"
 msgstr ""
@@ -2158,11 +2196,6 @@ msgstr ""
 msgid "Waiting"
 msgstr ""
 
-#: inc/enums/esr-registration-status.enum.php:24
-#: inc/templaters/administration/registration/esr-registration-statistics.template.php:22
-msgid "Confirmed"
-msgstr ""
-
 #: inc/enums/esr-registration-status.enum.php:27
 msgid "Canceled"
 msgstr ""
@@ -2177,6 +2210,12 @@ msgstr ""
 
 #: inc/enums/esr-schedule-style.enum.php:29
 msgid "By Hours Compact"
+msgstr ""
+
+#: inc/support/esr-user-role-editor.php:14
+#: inc/templaters/administration/school/esr-school.templater.php:16
+#: inc/templaters/user/esr-user.template.php:15
+msgid "Easy School Registration"
 msgstr ""
 
 #: inc/templaters/administration/add-over-limit/esr-add-over-limit.template.php:16
@@ -2220,6 +2259,60 @@ msgstr ""
 msgid "Send"
 msgstr ""
 
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-column-content.php:14
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php:16
+#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:30
+#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:46
+#: inc/templaters/administration/payments/subblock/esr-payment-table-column-content.php:21
+#: inc/templaters/administration/payments/subblock/esr-payment-table-header.php:16
+#: inc/templaters/administration/payments/subblock/esr-payment-table.php:28
+#: inc/templaters/administration/payments/subblock/esr-payment-table.php:67
+#: inc/templaters/administration/payments/tabs/esr-payment-debts-tab.template.php:33
+#: inc/templaters/administration/payments/tabs/esr-payment-debts-tab.template.php:91
+#: inc/templaters/administration/registration/subblock/esr-registration-table-column-content.php:20
+#: inc/templaters/administration/registration/subblock/esr-registration-table-header.php:20
+#: inc/templaters/administration/students/subblock/esr-students-table.subblock.php:16
+#: inc/templaters/administration/students/subblock/esr-students-table.subblock.php:32
+#: inc/templaters/administration/teachers/subblock/esr-teachers-table.subblock.php:26
+#: inc/templaters/administration/teachers/subblock/esr-teachers-table.subblock.php:46
+#: inc/templaters/administration/waves/subblock/esr-waves-table.subblock.php:28
+#: inc/templaters/administration/waves/subblock/esr-waves-table.subblock.php:44
+msgid "Actions"
+msgstr ""
+
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php:31
+#: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-table.template.php:30
+#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:32
+#: inc/templaters/administration/payment-emails/esr-payment-emails.template.php:32
+#: inc/templaters/administration/payments/subblock/esr-payment-table-header.php:11
+#: inc/templaters/administration/payments/subblock/esr-payment-table.php:26
+#: inc/templaters/administration/registration/subblock/esr-registration-table-header.php:46
+#: inc/templaters/administration/students/esr-students.template.php:47
+#: inc/templaters/administration/students/esr-students.template.php:65
+#: inc/templaters/helpers/esr-student-export.templater.php:93
+#: inc/templaters/helpers/esr-student-export.templater.php:132
+#: inc/templaters/userinfo/payments/esr.templater.php:24
+msgid "Status"
+msgstr ""
+
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php:37
+msgid "Transaction title"
+msgstr ""
+
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php:43
+#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:34
+msgid "Date"
+msgstr ""
+
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php:49
+#: inc/templaters/administration/payments/subblock/esr-payment-form.php:73
+msgid "Amount"
+msgstr ""
+
+#: inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table.subblock.php:52
+msgid "Reject"
+msgstr ""
+
 #: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-course.helper.php:30
 #: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-course.helper.php:54
 #: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-table.template.php:34
@@ -2247,20 +2340,6 @@ msgstr ""
 
 #: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-table.template.php:21
 msgid "Hide passed courses"
-msgstr ""
-
-#: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-table.template.php:30
-#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:32
-#: inc/templaters/administration/payment-emails/esr-payment-emails.template.php:32
-#: inc/templaters/administration/payments/subblock/esr-payment-table-header.php:11
-#: inc/templaters/administration/payments/subblock/esr-payment-table.php:26
-#: inc/templaters/administration/registration/subblock/esr-registration-table-header.php:46
-#: inc/templaters/administration/students/esr-students.template.php:47
-#: inc/templaters/administration/students/esr-students.template.php:65
-#: inc/templaters/helpers/esr-student-export.templater.php:93
-#: inc/templaters/helpers/esr-student-export.templater.php:132
-#: inc/templaters/userinfo/payments/esr.templater.php:24
-msgid "Status"
 msgstr ""
 
 #: inc/templaters/administration/course-in-numbers/esr-course-in-numbers-table.template.php:32
@@ -2465,29 +2544,6 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:30
-#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:46
-#: inc/templaters/administration/payments/subblock/esr-payment-table-column-content.php:21
-#: inc/templaters/administration/payments/subblock/esr-payment-table-header.php:16
-#: inc/templaters/administration/payments/subblock/esr-payment-table.php:28
-#: inc/templaters/administration/payments/subblock/esr-payment-table.php:67
-#: inc/templaters/administration/payments/tabs/esr-payment-debts-tab.template.php:33
-#: inc/templaters/administration/payments/tabs/esr-payment-debts-tab.template.php:91
-#: inc/templaters/administration/registration/subblock/esr-registration-table-column-content.php:20
-#: inc/templaters/administration/registration/subblock/esr-registration-table-header.php:20
-#: inc/templaters/administration/students/subblock/esr-students-table.subblock.php:16
-#: inc/templaters/administration/students/subblock/esr-students-table.subblock.php:32
-#: inc/templaters/administration/teachers/subblock/esr-teachers-table.subblock.php:26
-#: inc/templaters/administration/teachers/subblock/esr-teachers-table.subblock.php:46
-#: inc/templaters/administration/waves/subblock/esr-waves-table.subblock.php:28
-#: inc/templaters/administration/waves/subblock/esr-waves-table.subblock.php:44
-msgid "Actions"
-msgstr ""
-
-#: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:34
-msgid "Date"
-msgstr ""
-
 #: inc/templaters/administration/courses/subblock/esr-courses-table.subblock.php:51
 #: inc/workers/esr-ajax.worker.php:473
 msgid "Passed"
@@ -2597,10 +2653,6 @@ msgstr ""
 #: inc/templaters/administration/registration/subblock/esr-registration-form.subblock.php:40
 #: inc/templaters/administration/students/subblock/esr-students-table.subblock.php:18
 msgid "Student Email"
-msgstr ""
-
-#: inc/templaters/administration/payments/subblock/esr-payment-form.php:73
-msgid "Amount"
 msgstr ""
 
 #: inc/templaters/administration/payments/subblock/esr-payment-form.php:89

@@ -97,6 +97,54 @@
           "store_path": "/nix/store/n7zg8vq3gf10s0jjkw5vv7f55iyck2mc-php-with-extensions-8.3.12"
         }
       }
+    },
+    "wp-cli@latest": {
+      "last_modified": "2024-10-13T23:44:06Z",
+      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#wp-cli",
+      "source": "devbox-search",
+      "version": "2.10.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y0jxknwflbvmkapw64fxg14rsg9ga6f5-wp-cli-2.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/y0jxknwflbvmkapw64fxg14rsg9ga6f5-wp-cli-2.10.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/87hs8f29nhnrdgln04m5xlrcbksx9z7d-wp-cli-2.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/87hs8f29nhnrdgln04m5xlrcbksx9z7d-wp-cli-2.10.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1wqscfw7blzqlg48wlwj33gv2i5miyb1-wp-cli-2.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1wqscfw7blzqlg48wlwj33gv2i5miyb1-wp-cli-2.10.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dxnhlfsyyyk5kxm42k69xa5a8icg2yha-wp-cli-2.10.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dxnhlfsyyyk5kxm42k69xa5a8icg2yha-wp-cli-2.10.0"
+        }
+      }
     }
   }
 }

@@ -46,6 +46,8 @@ class ESR_Role {
 		'esr_payment_view'                => true,
 		'esr_payment_debts_view'          => true,
 		'esr_registration_edit'           => true,
+		'esr_bank_transactions_view'      => true,
+		'esr_bank_transactions_edit'      => true,
 		'esr_registration_view'           => true,
 		'esr_settings'                    => true,
 		'esr_school'                      => true,

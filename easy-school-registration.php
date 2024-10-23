@@ -137,6 +137,16 @@ if ( ! class_exists( 'Easy_School_Registration' ) ) {
 		public $registration_status;
 
 		/**
+		 * @var object|ESR_Bank_Transaction
+		 */
+		public $bank_transaction;
+
+		/**
+		 * @var object|ESR_Bank_Transaction_Status
+		 */
+		public $bank_transaction_status;
+
+		/**
 		 * @var object|ESR_Role
 		 */
 		public $role;
@@ -225,6 +235,8 @@ if ( ! class_exists( 'Easy_School_Registration' ) ) {
 				self::$instance->payment_type           = new ESR_Enum_Payment_Type();
 				self::$instance->registration           = new ESR_Registration();
 				self::$instance->registration_status    = new ESR_Registration_Status();
+				self::$instance->bank_transaction       = new ESR_Bank_Transaction();
+				self::$instance->bank_transaction_status= new ESR_Bank_Transaction_Status();
 				self::$instance->role                   = new ESR_Role();
 				self::$instance->schedule               = new ESR_Schedule();
 				self::$instance->schedule_style         = new ESR_Enum_Schedule_Style();
@@ -319,6 +331,7 @@ if ( ! class_exists( 'Easy_School_Registration' ) ) {
 			require_once ESR_PLUGIN_PATH . '/inc/class/esr-payment.class.php';
 			require_once ESR_PLUGIN_PATH . '/inc/class/esr-tags.class.php';
 			require_once ESR_PLUGIN_PATH . '/inc/class/esr-multiple-dates.class.php';
+			require_once ESR_PLUGIN_PATH . '/inc/class/esr-bank-transaction.class.php';
 
 			require_once ESR_PLUGIN_PATH . '/inc/class/esr-tiny-mce.php';
 
@@ -342,6 +355,7 @@ if ( ! class_exists( 'Easy_School_Registration' ) ) {
 			require_once ESR_PLUGIN_PATH . '/inc/enums/esr-registration-status.enum.php';
 			require_once ESR_PLUGIN_PATH . '/inc/enums/esr-role.enum.php';
 			require_once ESR_PLUGIN_PATH . '/inc/enums/esr-schedule-style.enum.php';
+			require_once ESR_PLUGIN_PATH . '/inc/enums/esr-bank-transaction-status.enum.php';
 
 			// Models
 			require_once ESR_PLUGIN_PATH . '/inc/models/esr-course.php';
@@ -393,6 +407,10 @@ if ( ! class_exists( 'Easy_School_Registration' ) ) {
 			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/waves/esr-waves.templater.php';
 			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/waves/subblock/esr-waves-table.subblock.php';
 			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/waves/subblock/esr-waves-edit-form.subblock.php';
+			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/bank-transactions/esr-bank-transactions.template.php';
+			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table.subblock.php';
+			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-header.php';
+			require_once ESR_PLUGIN_PATH . '/inc/templaters/administration/bank-transactions/subblock/esr-bank-transactions-table-column-content.php';
 			require_once ESR_PLUGIN_PATH . '/inc/templaters/emails/esr-course-confirmation-email-templater.php';
 			require_once ESR_PLUGIN_PATH . '/inc/templaters/emails/esr-gdpr-email.template.php';
 			require_once ESR_PLUGIN_PATH . '/inc/templaters/emails/esr-payment-confirmation-email.template.php';

@@ -22,6 +22,7 @@ class ESR_Admin {
 
 		add_submenu_page(self::ADMIN_MENU_SLUG, esc_html__('Payments', 'easy-school-registration'), esc_html__('Payments', 'easy-school-registration'), 'esr_payment_view', ESR_Payments_Templater::MENU_SLUG, ['ESR_Payments_Templater', 'print_page']);
 		add_submenu_page(self::ADMIN_MENU_SLUG, esc_html__('Payment emails', 'easy-school-registration'), esc_html__('Payment emails', 'easy-school-registration'), 'esr_payment_emails', ESR_Template_Payment_Emails::MENU_SLUG, ['ESR_Template_Payment_Emails', 'print_page']);
+		add_submenu_page(self::ADMIN_MENU_SLUG, esc_html__('Bank transactions', 'easy-school-registration'), esc_html__('Bank transactions', 'easy-school-registration'), 'esr_bank_transactions_view', ESR_Template_Bank_Transactions::MENU_SLUG, ['ESR_Template_Bank_Transactions', 'print_page']);
 
 		add_submenu_page(self::ADMIN_MENU_SLUG, esc_html__('Settings', 'easy-school-registration'), esc_html__('Settings', 'easy-school-registration'), 'esr_settings', ESR_Settings_Templater::MENU_SLUG, ['ESR_Settings_Templater', 'print_page']);
 		add_submenu_page(self::ADMIN_MENU_SLUG, esc_html__('Students', 'easy-school-registration'), esc_html__('Students', 'easy-school-registration'), 'esr_students_view', ESR_Template_Students::MENU_SLUG, ['ESR_Template_Students', 'print_page']);

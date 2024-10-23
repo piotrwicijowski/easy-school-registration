@@ -113,6 +113,10 @@ class ESR_Enqueue_Scripts {
 				'esr_scripts_notify',
 				'esr_scripts_student_admin',
 			],
+			ESR_Template_Bank_Transactions::MENU_SLUG => [
+				'esr_scripts_default_admin',
+				'esr_scripts_datatable',
+			],
 			ESR_Admin::ADMIN_MENU_SLUG                  => [
 				'esr_scripts_admin',
 			],
